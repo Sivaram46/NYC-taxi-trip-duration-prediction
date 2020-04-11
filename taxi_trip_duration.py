@@ -11,8 +11,8 @@ from sklearn.model_selection import train_test_split
 
 #%% # 2
 # read data and store in a dataframe
-train_data = pd.read_csv('taxi_trip_train.zip')
-test_data = pd.read_csv('taxi_trip_test.zip')
+train_data = pd.read_csv('train.zip', compression = 'zip')
+test_data = pd.read_csv('test.zip', compression = 'zip')
 
 train_data.head()
 
